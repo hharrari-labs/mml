@@ -1,0 +1,562 @@
+/* reset css */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-weight: inherit;
+    font-style: inherit;
+    font-size: 100%;
+    font-family: inherit;
+    vertical-align: baseline;
+}
+
+table{
+    empty-cells: show;
+}
+
+:focus {
+    outline: 0;
+}
+
+body {   
+    margin: 0;
+    padding: 0 0 180px;   
+/*    background: url("/public/images/vip.png") no-repeat scroll 18% 33% #3D3644;*/
+    /*    font: 64.5% Gill Sans,My Gill Sans,sans-serif;*/
+    font:64.5%/1 "Helvetica Neue",Helvetica,Arial,sans-serif;
+    /*    font: 64.5% "Trebuchet MS",sans-serif;*/
+    line-height: 1;
+    color: #FFFFFF;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+td{
+    padding: 1px;
+}
+caption, th, td {
+    text-align: left;
+    font-weight: normal;
+    vertical-align: middle;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: "";
+}
+blockquote, q {
+    quotes: "" "";
+}
+
+img{
+    border:none;
+}
+
+ul{
+    text-decoration:none;
+}
+
+li{
+    list-style-type:none;
+}
+
+/* CSS Document */
+
+/* layout */
+
+#main{
+    margin:0 auto;
+    width:1134px;
+    position:relative;   
+    z-index: 1;
+}
+
+#content{
+    clear:both;
+    position: relative;
+    z-index: 1;
+}
+
+#logo {
+    height: 40px;
+}
+
+#header{
+    clear:both;
+    height: 75px;
+}
+
+#footer{
+    height: 29px;
+    margin-top: 12px;
+}
+
+/* menu */
+
+#menu{
+    position: absolute;
+    width: 1128px;
+    z-index: 10;
+}
+
+#menu .title-menu {
+    padding: 0.5em 1em;
+    cursor: pointer;
+
+}
+
+#menu .content-submenu{
+    -moz-border-radius-bottomleft: 10px;
+    -moz-border-radius-bottomright: 10px;
+    -moz-box-shadow: 0 0 5px #5A5A5A;
+    box-shadow: 1px 2px 2px 3px #888888;
+    border-radius: 0px 4px 4px 4px;
+    border: 0px 1px 1px 1px solid #888888;
+    background: #FFFFFF;
+    float: left;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    position: absolute;
+    top: 23px;
+    z-index: 1100;
+}
+
+#menu .content-submenu .title-content-submenu{
+    clear: both;
+    color: gray;
+    cursor: text;
+    font-size: 11px;
+    height: 25px;
+    line-height: 25px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 11px;
+    text-align: left;
+    width: 95%;
+}
+
+#menu .content-submenu .submenu{
+    clear: both;
+    cursor: pointer;
+    height: 25px;
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 90%;
+}
+
+
+#menu .content-submenu .submenu .title-submenu{
+    margin-left: 5px;
+}
+
+#menu .content-submenu .submenu a{
+    background: url("/public/images/navlist_arrow.png") no-repeat scroll 0 10px transparent;
+    border-top: 1px solid #E6E6D8;
+    display: block;
+    float: none;
+    font-size: 1.1em;
+    height: auto;
+    line-height: 27px;
+    margin-left: 20px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-right: 5px;
+    padding: 0 0 0 9px;
+    text-align: left;
+    text-decoration: none;
+    text-indent: 0;
+    text-shadow: none;
+    text-transform: none;
+    width: 75%;
+}
+
+#menu .content-submenu .submenu a:hover {
+    color: #c50a0a !important;
+    background: url(/public/images/navlist_arrow_hover.png) no-repeat 0px 10px;
+}
+
+/* login */
+
+#content-login {
+  
+    margin-left: 340px;
+    overflow: hidden;
+    padding: 0.2em;
+    position: relative;
+    top: 33px;
+    width: 424px;
+    display: block;
+}
+
+#content-login #login {
+    line-height: 18px;
+    margin-top: 5px;
+}
+
+#content-login #login #error-login {
+    margin-bottom: 5px;
+    margin-right: 8px;
+}
+
+#content-login #login #login-form {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    clear: both;
+    height: 100px;
+}
+
+#content-login #login #login-form .login-line {
+    clear: both;
+    height: 20px;
+}
+
+#content-login #login #login-form .login-line input {
+    width: 207px;
+    color: white;
+}
+
+#content-login #login #login-form .login-line .login-label{
+    float: left;
+    width: 130px;
+    height: 20px;
+    font-weight: bold;
+}
+
+#content-login #login #login-form #submit-login{
+    float:right;
+    margin-top: 1px;
+    margin-right: 8px;
+    height: 23px;
+}
+
+#login-form #submit-login {
+    margin-top: 10px;
+}
+
+/* captcha */
+
+#content-captcha {
+    background: none repeat scroll 0 0 #93BAC5;
+    margin-left: 340px;
+    overflow: hidden;
+    padding: 0.2em;
+    position: relative;
+    top: 33px;
+    width: 375px;
+    display: block;
+}
+
+#content-captcha .back_home {
+    margin-left: 170px;
+}
+
+#content-captcha #captcha {
+    line-height: 18px;
+    margin-top: 5px;
+}
+
+
+#content-captcha #captcha #captcha-form {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    clear: both;
+}
+
+#content-captcha #captcha #captcha-form .content-captcha-image {
+    clear: both;
+    height: 40px;
+    padding-left: 150px;
+}
+#content-captcha #captcha #captcha-form .content-captcha-image #cryptogram {
+    background: white;
+    height: 30px;
+}
+
+#content-captcha #captcha #captcha-form .captcha-line {
+    clear: both;
+    height: 23px;
+}
+
+
+#content-captcha #captcha #captcha-form .captcha-line .captcha-label{
+    float: left;
+    width: 150px;
+    height: 20px;
+    font-weight: bold;
+}
+
+#content-captcha #captcha #captcha-form button{
+    float:right;
+    margin-top: 1px;
+    margin-right: 8px;
+    height: 23px;
+}
+
+/* forgotten password */
+
+#content-forgotten-password {
+    background: none repeat scroll 0 0 #93BAC5;
+    margin-left: 340px;
+    overflow: hidden;
+    padding: 0.2em;
+    position: relative;
+    top: 33px;
+    width: 340px;
+    display: block;
+}
+
+#content-forgotten-password .back_home {
+    margin-left: 120px;
+}
+
+#content-forgotten-password #forgotten-password {
+    line-height: 18px;
+    margin-top: 5px;
+}
+
+#content-forgotten-password #forgotten-password #error-forgotten-password {
+    margin-bottom: 5px;
+    margin-right: 8px;
+}
+
+#content-forgotten-password #forgotten-password #forgotten-password-form {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    clear: both;
+}
+
+#content-forgotten-password #forgotten-password #forgotten-password-form .forgotten-password-line {
+    clear: both;
+    height: 23px;
+}
+
+#content-forgotten-password #forgotten-password #forgotten-password-form .forgotten-password-line input {
+    width: 207px;
+}
+
+#content-forgotten-password #forgotten-password #forgotten-password-form .forgotten-password-line .forgotten-password-label{
+    float: left;
+    width: 100px;
+    height: 20px;
+    font-weight: bold;
+}
+
+#content-forgotten-password #forgotten-password #forgotten-password-form button{
+    float:right;
+    margin-top: 1px;
+    margin-right: 8px;
+    height: 23px;
+}
+
+/* global */
+
+.button{
+    cursor: pointer;
+}
+
+.hidden{
+    display:none;
+}
+
+.left{
+    float:left;
+}
+
+.center{
+    text-align: center;
+}
+
+.both{
+    clear:both;
+}
+
+.toggle-close {
+    background:url(/public/images/arrow_right.png) no-repeat left 4px;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+.toggle-open {
+    background:url(/public/images/arrow_down.png) no-repeat left 4px;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+.error{
+    float:left;
+    padding-right:5px;
+    padding-top: 2px;
+}
+
+/*.input-error{
+    background: #fef1ec url(/public/images/jquery/ui-bg_glass_95_fef1ec_1x400.png) 50% 50% repeat-x;
+    color: #cd0a0a;
+}*/
+
+/* index */
+
+.is-checked {
+    background-image: url("/public/images/green_chk_over.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    text-align: left;
+}
+
+.icon-check{
+    font-size: 0px;
+}
+
+.is-over{
+    background-color: #DDFFDD
+}
+
+.delete{
+    cursor:pointer;
+    margin-left:5px;
+    float: left;
+    margin-right: 1px;
+    width: 16px;
+    height: 16px;
+}
+
+.update{
+    cursor:pointer;
+    float: left;
+    margin-left: 1px;
+    margin-right: 1px;
+
+}
+
+.actions-content{
+    font-weight:bold;
+    color:#FF0000;
+    text-transform:uppercase;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+}
+
+#dialog-delete, #dialog-archive{
+    text-align:center;
+}
+
+#js-message-delete, #js-message-archive{
+    display:none;
+}
+
+#js-new{
+    height: 29px;
+    margin-right: 3px;
+}
+
+#waiting{
+    background: url("/public/images/ajax-loader.gif") no-repeat scroll center center transparent;
+    height: 400px;
+    width: 100%;
+}
+
+.js-table-sorter{
+    display: none;
+}
+
+.column-action{
+    /*    width: 25px;*/
+}
+
+.action-icons{
+    width:50px;
+}
+
+/* form */
+
+.mandatory {
+    color: red;
+    float: none;
+    font-weight: bold;
+    margin: 0;
+}
+
+.line-form {
+    clear: both;
+    height: 21px;
+    padding-top: 5px;
+}
+
+.line-form .label-form{
+    float: left;
+    width: 206px;
+    font-weight: bold;
+}
+
+.line-form .label-radio{
+    cursor: pointer;
+}
+
+
+.line-form .content-input-form{
+    float:left;
+    margin-right:5px;
+}
+
+.line-form .content-error-form {
+    float: left;
+}
+
+.line-form .content-error-form .error-form {
+    float: left;
+    margin-top: 3px;
+}
+
+.line-form .content-error-form .icon-error-form {
+    float: left;
+}
+
+.line-form .content-input-form input[type=text]{
+    width: 200px;
+}
+
+.line-form .content-input-form select{
+    width: 200px;
+}
+
+.line-form .content-input-form textarea{
+    width: 200px;
+}
+
+#content-button{
+    width:95px;
+    margin-top:20px;
+}
+
+#form{
+    padding-left:17px;
+    margin-top:5px;
+    padding-top:5px;
+    height:97%;
+}
+
+
+#formulaire {
+    height: 97%;
+    margin-top: 5px;
+    padding-left: 7px;
+    padding-top: 5px;
+}

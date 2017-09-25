@@ -1,0 +1,311 @@
+/*public*/
+
+/*html{
+text-transform: uppercase;
+}*/
+body {
+height: 367px;
+padding: 0;
+   background: #111010 url("/public/images/mml.png") no-repeat top center ;
+}
+#content-login{
+margin: auto;
+width: 1126px;
+top: 0;
+padding: 0;
+}
+.ui-corner-all, .ui-corner-bottom, .ui-corner-right, .ui-corner-br {
+-moz-border-radius-bottomright: 0px;
+-webkit-border-bottom-right-radius: 0px;
+-khtml-border-bottom-right-radius: 0px;
+border-bottom-right-radius: 0px;
+}
+.ui-corner-all, .ui-corner-bottom, .ui-corner-left, .ui-corner-bl {
+-moz-border-radius-bottomleft: 0px;
+-webkit-border-bottom-left-radius: 0px;
+-khtml-border-bottom-left-radius: 0px;
+border-bottom-left-radius: 0px;
+}
+.ui-corner-all, .ui-corner-top, .ui-corner-right, .ui-corner-tr {
+-moz-border-radius-topright: 0px;
+-webkit-border-top-right-radius: 0px;
+-khtml-border-top-right-radius: 0px;
+border-top-right-radius: 0px;
+}
+.ui-corner-all, .ui-corner-top, .ui-corner-left, .ui-corner-tl {
+-moz-border-radius-topleft: 0px;
+-webkit-border-top-left-radius: 0px;
+-khtml-border-top-left-radius: 0px;
+border-top-left-radius: 0px;
+}
+.ui-button-text-only.ui-state-default {
+background: #FFD300;
+border: 1px solid #FFD300;
+color: #5A5959;
+font-weight: bold;
+text-transform: uppercase;
+}
+
+.ui-button-text-only.ui-state-default:hover,
+.ui-button-text-only.ui-state-default:active,
+.ui-button-text-only.ui-state-default:focus{
+background: #5A5959;
+border: 1px solid #5A5959;
+color: #ffffff;
+font-weight: bold;
+text-transform: uppercase;
+}
+
+/*****************************/
+/*           LOGIN           */
+/*****************************/
+
+#content-login #login #login-form  .login-line {
+clear: none;
+height: 0;
+display: inline;
+margin: auto;
+}
+#content-login #login #login-form  .login-line:first-child {
+padding-right: 15px;
+}
+
+#content-login #login #login-form {
+margin-top: 0px;
+margin-bottom: 0px;
+height: 0px;
+}
+.ui-widget-content {
+background: #111010;
+}
+#content #content-login .ui-widget-header {
+border: none;
+background: #FFD300;
+}
+
+#content-login #login {
+padding: 0;
+margin: 10px 5px 8px 10px;
+}
+#content-login #login #login-form .login-line .login-label {
+width: 0;
+height: 0;
+}
+
+#content-login #login #login-form .login-line input {
+margin: 5px 0 0 0;
+background: white;
+color: #5A5959;
+}
+#content-login #login #login-form .login-line:first-child > .login-label {
+margin: 5px 10px 0 48px;
+width: auto;
+}
+#content-login #login #login-form .login-line + .login-line > .login-label {
+margin: 5px 10px 0 48px;
+width: auto;
+}
+#content-login #login #login-form .login-line > a {
+position: relative;
+left: 48px;
+top: 4px;
+}
+#content-login #login #login-form #submit-login {
+position: relative;
+right: 40px;
+}
+.ui-dialog .ui-dialog-title {
+width: 100%;
+color: #5A5959;
+}
+
+/*****************************/
+/*          CAPTCHA          */
+/*****************************/
+#content-captcha .back_home {
+margin:0;
+float: right;
+}
+#content-captcha {
+background: #5C5959;
+margin: auto;
+top: 375px;
+}
+#content-captcha #captcha #captcha-form .content-captcha-image {
+padding-left: 0;
+}
+#content-captcha #captcha #captcha-form .content-captcha-image table {
+margin: auto;
+}
+#content-captcha #captcha #captcha-form .captcha-line .captcha-label {
+width: 115px;
+}
+#content-captcha #captcha #captcha-form button{
+position: relative;
+bottom: 25px;
+right: 6px;
+}
+
+/*private*/
+
+#main {
+width: 1128px;
+top: 367px;
+}
+
+#header {
+display: block;
+height: 0px;
+}
+
+#content {
+display: block;
+border: none;
+}
+
+#menu {
+width: auto;
+background: none;
+border: none;
+padding: 0px;
+margin: 2px 0 0 0;
+}
+
+#menu ul {
+background: none;
+padding: 0;
+}
+
+#user .actions-content {
+margin: 0;
+}
+
+#js-new,
+#js-new-code-barre {
+float: right;
+margin: 3px 0 0 3px;
+height: 26px;
+}
+
+#menu ul li:hover,
+#menu ul li:active,
+#menu ul li:focus,
+#menu ul li.ui-state-active,
+#menu ul li a:hover,
+#menu ul li a:active,
+#menu ul li a:focus,
+#menu ul li.ui-state-active a{
+background: #FFD300;
+color: #5A5959;
+border: none;
+}
+
+#menu ul{
+border: none;
+
+}
+
+#menu ul li{
+margin-right: 3px;
+background: #5A5959;
+border: none;
+}
+#menu ul li a{
+background: #5A5959;
+color: #FFFFFF;
+border: none;
+/*margin-right: 3px;*/
+}
+
+#content .ui-widget-header {
+color: #5A5959;
+background: #cac9c9;
+border: none;
+}
+
+#content .ui-widget-header input{
+background-color: #ffffff;
+}
+
+#content .dataTables_wrapper .ui-widget-header th.ui-state-default:first-child {
+border: none;
+}
+
+#content .dataTables_wrapper .ui-widget-header th.ui-state-default {
+background: #5a5959 !important;
+border: none;
+border-left-width: 1px;
+border-left-color: #cac9c9;
+border-left-style: solid;
+}
+
+#content .dataTables_wrapper .ui-widget-header th.ui-state-default:hover,
+#content .dataTables_wrapper .ui-widget-header th.ui-state-default:focus,
+#content .dataTables_wrapper .ui-widget-header th.ui-state-default:active {
+background: #FFD300 !important;
+color: #5A5959 !important;
+text-shadow: none;
+}
+
+#content #my-account {
+position: relative;
+top: 31px;
+}
+
+#content #my-account #content_formulaire .ui-dialog-content{
+border: none;
+}
+
+#content #my-account #content_formulaire .ui-widget-header{
+padding: 8px;
+background: #FFD300;
+}
+
+#content #my-account #content_formulaire #form .line-form #input-password {
+margin: 1px 0 0 0;
+width: 200px;
+background: white;
+color: #5A5959;
+}
+
+#content #my-account #content_formulaire #form {
+padding: 5px 0 0 15px;
+background: #595A5A;
+color: #ffffff;
+margin: 0;
+}
+
+#content #my-account #content_formulaire #form #content-button{
+margin: 8px 0 8px 0;
+}
+
+#content #my-account #content_formulaire #form .line-form input{
+background: white;
+color: #5A5959;
+}
+
+#content #my-account #content_formulaire #form .line-form #input-user-status {
+background: #ffffff;
+color: #5A5959;
+width: 202px;
+}
+
+#content #my-account #content_formulaire #form .mandatory {
+display: none;
+}
+
+/*pop in*/
+.ui-widget-content {
+	padding: 0px;
+}
+
+.ui-widget-content .ui-widget-header {
+	border: none;
+	background: #FFD300;
+}
+
+#form .line-form .content-input-form input,
+#form .line-form .content-input-form select {
+	background: white;
+	color: #5A5959;
+}

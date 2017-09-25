@@ -1,0 +1,10 @@
+Options +FollowSymLinks
+RewriteEngine On
+RewriteBase /
+
+RewriteRule ^([a-z_]+)$ /index.php?controller=$1&action=index [L,QSA]
+RewriteRule ^([a-z_]+)/([a-z_]+)$ /index.php?controller=$1&action=$2 [L,QSA]
+RewriteRule ^([a-z_]+)/([a-z_]+)/([A-Za-z0-9_|]+)$ /index.php?controller=$1&action=$2&id=$3 [L,QSA]
+RewriteRule ^([a-z_]+)/([A-Za-z0-9_]+)/([a-z_]+)$ /index.php?nested_controller=$1&nested_id=$2&controller=$3&action=index [L,QSA]
+RewriteRule ^([a-z_]+)/([A-Za-z0-9_]+)/([a-z_]+)/([a-z_]+)$ /index.php?nested_controller=$1&nested_id=$2&controller=$3&action=$4 [L,QSA]
+RewriteRule ^([a-z_]+)/([A-Za-z0-9_]+)/([a-z_]+)/([a-z_]+)/([A-Za-z0-9_\|]+)$ /index.php?nested_controller=$1&nested_id=$2&controller=$3&action=$4&id=$5 [L,QSA]
