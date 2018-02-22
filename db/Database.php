@@ -6,7 +6,7 @@ class Database {
 
 // Local
     public $db_server = 'localhost';
-    public $db_pass = '';
+    public $db_pass = 'root';
     public $db_user = 'root';
     public $db_name = 'dev_mml';
 
